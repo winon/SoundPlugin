@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="sounds-onesignal-plugin" version="1.0.0"> 
+
+    <name>Adding sounds to OneSignal push notification</name> 
+    <description>Add customized sounds to the OneSignal push notifications service by moving the audio files to the requiered folders by OneSignal SDK</description> 
+    <license>MIT</license> 
+
+    <engines> 
+        <engine name="cordova" version=">=3.0.0" /> 
+    </engines>  
+
+    <!-- android --> 
+    <platform name="android">
+        
+        <!-- Replace Sound1.wav by your own sound -->
+        <resource-file src="src/notification.wav" target="res/raw/notification.wav" />
+		<resource-file src="src/onesignal_bgimage_default_image.png" target="res/drawable/onesignal_bgimage_default_image.png" />
+        
+        <resource-file src="src/ic_stat_onesignal_default.png" target="res/drawable-hdpi/ic_stat_onesignal_default.png" />
+                
+    </platform>  
+    
+</plugin>
